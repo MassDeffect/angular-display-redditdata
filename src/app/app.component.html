@@ -1,0 +1,72 @@
+<hello name="{{ name }}"></hello>
+<p>-----------------------------------------------------------------</p>
+<p>
+  Angular Data
+</p>
+<p>-----------------------------------------------------------------</p>
+
+<ul *ngFor="let item of dataListAngular ">
+  <li>
+    {{item.data.title}}
+  </li>
+  <li>
+    {{item.data.author}}
+  </li>
+  <li>
+    {{item.data.selftext}}
+  </li>
+  <li>{{item.data.subreddit}}</li>
+  <li>
+    {{item.data.created_utc * 1000 | date:'dd/MM/yyyy'}}
+  </li>
+  <li>
+    <img [src]="item.data.thumbnail" >
+
+  </li>
+</ul>
+<p>-----------------------------------------------------------------</p>
+<p>Dotnet Data</p>
+<p>-----------------------------------------------------------------</p>
+
+<ul *ngFor="let item of dataListDotnet">
+  <li>
+    {{item.data.title}}
+  </li>
+  <li>
+    {{item.data.author}}
+  </li>
+  <li>
+    {{item.data.selftext}}
+  </li>
+  <li>{{item.data.subreddit}}</li>
+  <li>
+    {{item.data.created * 1000 | date:'dd/MM/yyyy'}}
+  </li>
+  <li>
+    <img [src]="item.data.thumbnail" >
+
+  </li>
+</ul>
+
+<p>-----------------------------------------------------------------</p>
+<p>SQL Data</p>
+<p>-----------------------------------------------------------------</p>
+<ul *ngFor="let item of dataListSql">
+  <li>
+    {{item.data.title}}
+  </li>
+  <li>
+    {{item.data.author}}
+  </li>
+  <li>
+    {{item.data.selftext}}
+  </li>
+  <li>{{item.data.subreddit}}</li>
+  <li>
+    {{item.data.created * 1000 | date:'dd/MM/yyyy'}}
+  </li>
+  <li>
+    <img [src]="item.data.thumbnail" >
+
+  </li>
+</ul>
